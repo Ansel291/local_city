@@ -4,13 +4,16 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session = require('express-session');
+var passport = require('passport');
 
-var venues = require('./app/routes/venues');
+// load the env vars
+require('dotenv').load();
 
 var app = express();
 
 // requiring the database
-var mongoose = require('./app/config/database');
+mongoose = require('./app/config/database');
 
 var allowCrossDomain = function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
@@ -19,15 +22,43 @@ var allowCrossDomain = function(req, res, next) {
 }
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+app.use(cookieParser('notsosecretnowareyou'));
+app.use(session({
+  secret: 'wdirocks',
+  resave: false,
+  saveUninitialized: true
+}));
+
+
 app.use(allowCrossDomain);
 
-app.use('/api/venues', venues);
+// mount passport
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use(require('node-sass-middleware')({
+  src: path.join(__dirname, 'public'),
+  dest: path.join(__dirname, 'public'),
+  indentedSyntax: false,
+  sourceMap: false
+}));
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+app.use(function(req, res, next) {
+  console.log("Request Query:", req.query);
+  console.log("Request Params:", req.params);
+  console.log("Request Body:", req.body);
+  next();
+});
+
+// require('./app/config/passport')(passport);
+// // Defines all of our "dynamic" routes.
+require('./app/config/routes')(app, passport);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -43,7 +74,7 @@ app.use(function(req, res, next) {
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    res.render('error', {
+    res.json({
       message: err.message,
       error: err
     });
@@ -54,7 +85,7 @@ if (app.get('env') === 'development') {
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
   res.status(err.status || 500);
-  res.render('error', {
+  res.json('error', {
     message: err.message,
     error: {}
   });
