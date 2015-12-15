@@ -1,8 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Mako);
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.navbar {
+  background-color: lightgrey;
+  box-shadow: 2.5px 2.5px 1.5px #999999;
 }
+
+.navbar-brand {
+  font-family: 'Righteous', cursive;
+}
+
+#nav-font {
+  font-family: 'Mako', sans-serif;
+  font-size: 14px;
+}
+
+.search-page {
+  margin-top: 350px;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+  max-width: none;
+  margin-top: -12.5px;
+  box-shadow: 5px 5px 2.5px #999999;
+}
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+
+
+
+

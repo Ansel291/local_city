@@ -5,12 +5,16 @@
     .module("localCityApp")
     .config(AppRoutes);
 
-  AppRoutes.$inject = ["$stateProvider"];
+  AppRoutes.$inject = ["$stateProvider", "$urlRouterProvider"];
+
+  function AppRoutes($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state("homePage", {
-        templateUrl: "/templates/home.html",
-        controller
-      })
+      .state("search", {
+        url: "/search",
+        templateUrl: "/templates/search.html"
+      });
 
+    $urlRouterProvider.otherwise("/");
+  }
 
-})
+})();

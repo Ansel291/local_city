@@ -1,7 +1,6 @@
 (function() {
-"use strict";
-
-angular
-  .module('app' ['ui.router'])
+  angular.module('localCityApp', [
+    "ui.router"
+    ]);
 
 })();
