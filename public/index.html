@@ -8,14 +8,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
 
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 </head>
 
-<body ng-controller="MainController as vm" ng-cloak>
+<body>
 
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -33,19 +31,18 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav"></ul>
 
-
-        </ul>
-        <form class="navbar-form navbar-left" role="search" method="GET" action="/venues">
+        <form ng-controller="SearchController as vm" ng-submit="vm.search()" class="navbar-form navbar-left">
           <div class="form-group">
-            <input id="nav-font" type="text" class="form-control" placeholder="CITY">
+            <input id="search-city" required type="text" class="form-control nav-font" placeholder="CITY" ng-model="vm.city">
           </div>
           <div class="form-group">
-            <input id="nav-font" type="text" class="form-control" placeholder="SEARCH FOR">
+            <input id="search-query" required type="text" class="form-control nav-font" placeholder="SEARCH FOR" ng-model="vm.query">
           </div>
-          <button ui-sref-active="active" ui-sref="search" id="nav-font" type="submit" class="btn btn-default">SUBMIT</button>
+          <button type="submit" class="btn btn-default nav-font">SUBMIT</button>
         </form>
+
         <ul class="nav navbar-nav navbar-right">
 
           <li><a id="nav-font" href="#">Google Login</a></li>
@@ -54,11 +51,14 @@
     </div><!-- /.container-fluid -->
   </nav>
 
+  <main ng-controller="MainController as vm">
 
     <div id="map">
       <div class="google-maps">
       </div>
     </div>
+
+  </main>
 
  <!-- Google map scripts-->
   <script src="/assets/js/googleMap.js"></script>
