@@ -7,7 +7,6 @@ var foursquareApiController = require('../controllers/foursquareApi');
 // var welcomeController = require('../controllers/welcome');
 // var venuesController  = require('../controllers/venues');
 // var usersController = require('../controllers/users');
-// var yelpController    = require('../controllers/fourSquare');
 
 
 module.exports = function(app, passport) {

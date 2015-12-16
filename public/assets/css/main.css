@@ -41,10 +41,21 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 
 .index-list {
-  margin-top: 25px;
+  margin-top: 55px;
   margin-left: 35px;
-  margin-bottom: -15px;
+  margin-bottom: -25px;
   color: rgba(0, 0, 0, 0.65);
+}
+
+.index-list-connected {
+  margin-top: 15px;
+  border-bottom: 1px solid lightgrey;
+}
+
+#buttonAddVenue {
+  border-radius: 5px;
+  margin-top: 15px;
+  color: red;
 }
 
 
