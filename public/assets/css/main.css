@@ -40,6 +40,12 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
     background:none !important;
 }
 
+.index-list {
+  margin-top: 25px;
+  margin-left: 35px;
+  margin-bottom: -15px;
+  color: rgba(0, 0, 0, 0.65);
+}
 
 
 

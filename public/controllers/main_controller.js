@@ -5,10 +5,18 @@
     .module("localCityApp")
     .controller("MainController", MainController);
 
-  MainController.$inject = [];
+  MainController.$inject = ["$state", "$log", "venuesDataService"];
 
-  function MainController() {
+  function MainController($state, $log, venuesDataService) {
     var vm = this;
+    vm.venues = [];
+
+    vm.search = function() {
+      venuesDataService.getVenues(encodeURI('near=' + vm.city + '&query=' + vm.query))
+        .then(function(res) {
+          vm.venues = res.data.venues;
+        });
+    };
 
   }
 

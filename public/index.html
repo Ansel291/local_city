@@ -8,12 +8,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
 
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 </head>
 
-<body>
+<body ng-controller="MainController as vm">
 
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -33,7 +35,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav"></ul>
 
-        <form ng-controller="SearchController as vm" ng-submit="vm.search()" class="navbar-form navbar-left">
+        <form ng-submit="vm.search()" class="navbar-form navbar-left">
           <div class="form-group">
             <input id="search-city" required type="text" class="form-control nav-font" placeholder="CITY" ng-model="vm.city">
           </div>
@@ -51,10 +53,18 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <main ng-controller="MainController as vm">
+  <main>
 
     <div id="map">
       <div class="google-maps">
+      </div>
+    </div>
+
+    <div ng-repeat="v in vm.venues">
+      <div class="nav-font index-list">
+        {{ v.name }}
+        {{ v.location.formattedAddress}}
+        {{ v.venuePhotos}}
       </div>
     </div>
 
@@ -71,7 +81,7 @@
 
   <script src="/app.js"></script>
   <script src="/app.routes.js"></script>
-  <script src="/controllers/search_controller.js"></script>
   <script src="/controllers/main_controller.js"></script>
+  <script src="/services/venues.dataservice.js"></script>
 </body>
 </html>

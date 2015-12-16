@@ -8,7 +8,7 @@ var baseUri = 'https://api.foursquare.com/v2/venues/'
 var clientIdParam     = "?client_id="     + env.FOURSQUARE_CLIENT_ID;
 var clientSecretParam = "&client_secret=" + env.FOURSQUARE_CLIENT_SECRET;
 
-var authParams = clientIdParam + clientSecretParam + "&v=20151001"
+var authParams = clientIdParam + clientSecretParam + "&v=20131230"
 
 
 
