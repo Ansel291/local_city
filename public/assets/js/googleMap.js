@@ -1,4 +1,6 @@
+
 function initMap() {
+
   var customMapType = new google.maps.StyledMapType([
       {
         stylers: [
@@ -37,6 +39,8 @@ function initMap() {
 
 }
 
+
+
 // var map;
 // function initMap() {
 //   var latLng = {
@@ -58,3 +62,7 @@ function initMap() {
 
 // var featureOpts = [
 // ]
+
+
+
+
