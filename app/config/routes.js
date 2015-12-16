@@ -25,18 +25,18 @@ module.exports = function(app, passport) {
   app.use('/', router);
 
 
-//   // welcome/root path
-//   router.get('/', welcomeController.index);
+  // // welcome/root path
+  // router.get('/', welcomeController.index);
 
-//   router.get('/users/:id', usersController.show);
-//   // crawls resources
-//   router.get('/venues',     venuesController.index);
-//   router.get('/venues/:id', venuesController.show);
-//   // router.put('/crawls/:id', crawlsController.update);
-//   router.post('/venues', venuesController.create);
-//   router.get('/venues/search/:name', venuesController.search);
-//   router.delete('/venues/:id', venuesController.destroy);
-//   router.put('/venues/:id',    venuesController.update);
+  // router.get('/users/:id', usersController.show);
+  // // crawls resources
+  // router.get('/venues',     venuesController.index);
+  // router.get('/venues/:id', venuesController.show);
+  // // router.put('/crawls/:id', crawlsController.update);
+  // router.post('/venues', venuesController.create);
+  // router.get('/venues/search/:name', venuesController.search);
+  // router.delete('/venues/:id', venuesController.destroy);
+  // router.put('/venues/:id',    venuesController.update);
 
 
 //   // fourSquare api implmentation

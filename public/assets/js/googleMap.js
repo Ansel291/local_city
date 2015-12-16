@@ -1,4 +1,6 @@
 
+var map;
+
 function initMap() {
 
   var customMapType = new google.maps.StyledMapType([
@@ -27,7 +29,7 @@ function initMap() {
   });
   var customMapTypeId = 'custom_style';
 
-  var map = new google.maps.Map(document.getElementById('map'), {
+  map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
     center: {lat: 34.032032, lng: -118.269870},  // Brooklyn.
     mapTypeControlOptions: {
