@@ -20,6 +20,10 @@
       .state("home", {
         url:"/home",
         templateUrl: "/templates/home.html"
+      })
+      .state("signUp", {
+        url:"/signUp",
+        templateUrl: "/templates/signUp.html"
       });
 
     $urlRouterProvider.otherwise("/");

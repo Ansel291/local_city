@@ -102,8 +102,25 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
   padding-bottom: 750px;
 }
 
+.signUp-background-image {
+  background: url('http://i.imgur.com/10fTCef.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -16.5px;
+  padding-bottom: 750px;
+}
+
 .sign-in-form {
   margin-top: 250px;
+}
+
+#sign-up-form {
+  margin-top: 161.5px;
 }
 
 .email-password-font {
