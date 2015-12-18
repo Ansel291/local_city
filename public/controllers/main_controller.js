@@ -23,6 +23,7 @@
     vm.resetSearchField = function() {
       vm.city = '';
       vm.query = '';
+      vm.venues = [];
     };
 
 
