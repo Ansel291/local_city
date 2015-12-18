@@ -9,9 +9,13 @@
 
   function AppRoutes($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state("search", {
-        url: "/search",
-        templateUrl: "/templates/search.html"
+      .state("home", {
+        url: "/home",
+        templateUrl: "/templates/home.html"
+      })
+      .state("signIn", {
+        url:"/signIn",
+        templateUrl: "/templates/signIn.html"
       });
 
     $urlRouterProvider.otherwise("/");

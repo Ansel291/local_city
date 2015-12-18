@@ -57,11 +57,52 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
   border-bottom: 1px solid lightgrey;
 }
 
+.index-welcome-image {
+  background: url('http://i.imgur.com/QBtR7N3.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -16.5px;
+  padding-bottom: 750px;
+}
+
+.local-city-white {
+  font-family: 'Righteous', cursive;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 100px;
+  text-align: center;
+  vertical-align: center;
+}
+
 #buttonAddVenue {
   border-radius: 5px;
   margin-top: 15px;
   color: red;
 }
 
+.category-bar {
+  width: 150px;
+}
+
+.signIn-background-image {
+  background: url('http://i.imgur.com/AEWDvhG.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -16.5px;
+  padding-bottom: 750px;
+}
+
+.sign-in-password {
+  margin-top: 300px;
+}
 
 

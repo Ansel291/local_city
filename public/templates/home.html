@@ -1,0 +1,27 @@
+<div id="map">
+  <div class="google-maps">
+  </div>
+</div>
+
+<div ng-repeat="v in vm.venues">
+  <div class="nav-font index-list">
+    <div class="index-list-connected col-sm-8">
+    {{ v.name + ':'}}
+    {{ v.location.address + ','}}
+    {{ v.location.city + ','}}
+    {{ v.location.state}}
+    {{ &nbsp&nbsp v.location.postalCode}}
+    <br><br>
+    </div>
+    <div class="col-sm-4">
+    <input type="button" value="Add" class="AddVenue" id="buttonAddVenue">
+    </div>
+  </div>
+</div>
+
+ <!-- Google map scripts-->
+  <script src="/assets/js/googleMap.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9KpufDc-ChcPy4HR7qIiER54gWZ40zLw&callback=initMap">
+  </script>
+
