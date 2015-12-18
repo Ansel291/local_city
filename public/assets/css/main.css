@@ -120,8 +120,8 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 
 .local-city-title {
-  margin-top: 40px;
-  margin-left: 50px;
+  margin-top: 85px;
+  margin-left: 60px;
   color: rgba(255, 255, 255, .815);
   font-family: 'Righteous', cursive;
   font-size: 80px;
