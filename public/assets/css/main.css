@@ -103,18 +103,20 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 
 .sign-in-form {
-  margin-top: 270px;
+  margin-top: 250px;
 }
 
 .email-password-font {
   color: rgba(255, 255, 255, .815);
   font-family: 'Mako', sans-serif;
-  font-size: 14px;
-  letter-spacing: 1.5px;
+  font-size: 13.65px;
+  letter-spacing: 1.20px;
 }
 
 .btn-warning {
   border: 1px solid lightgrey;
+  font-size: 13.65px;
+  letter-spacing: 1px;
 }
 
 .local-city-title {
