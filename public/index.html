@@ -42,7 +42,7 @@
           <div class="form-group">
             <input id="search-query" required type="text" class="form-control nav-font" placeholder="SEARCH FOR" ng-model="vm.query">
           </div>
-          <button type="submit" class="btn btn-default nav-font">SUBMIT</button>
+          <button type="submit" class="btn btn-default nav-font" ng-click="vm.resetSearchFieldOnSubmit()">SUBMIT</button>
         </form>
 
         <ul class="nav navbar-nav navbar-right">

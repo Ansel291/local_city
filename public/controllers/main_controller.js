@@ -26,6 +26,10 @@
       vm.venues = [];
     };
 
+    vm.resetSearchFieldOnSubmit = function() {
+      vm.venues = [];
+    };
+
 
     function centerMap() {
       var latMin, latMax, lngMin, lngMax;
