@@ -6,8 +6,6 @@
 
 An app that helps you make recommendations to your friends who are visiting from out of town. 
 
-https://secure-ravine-3320.herokuapp.com
-
 ---
 
 ### The Purpose
