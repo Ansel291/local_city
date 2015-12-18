@@ -13,9 +13,9 @@
         url: "/search",
         templateUrl: "/templates/search.html"
       })
-      .state("signIn", {
-        url:"/signIn",
-        templateUrl: "/templates/signIn.html"
+      .state("logIn", {
+        url:"/logIn",
+        templateUrl: "/templates/logIn.html"
       })
       .state("home", {
         url:"/home",
