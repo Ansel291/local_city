@@ -144,4 +144,9 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
   font-size: 80px;
 }
 
+.sign-up {
+  letter-spacing: .75px;
+  font-family: 'Mako', sans-serif;
+}
+
 
