@@ -20,6 +20,11 @@
         });
     };
 
+    vm.resetSearchField = function() {
+      vm.city = '';
+      vm.query = '';
+    };
+
 
     function centerMap() {
       var latMin, latMax, lngMin, lngMax;
