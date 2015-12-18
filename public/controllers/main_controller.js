@@ -14,7 +14,6 @@
     vm.search = function() {
       venuesDataService.getVenues(encodeURI('near=' + vm.city + '&query=' + vm.query))
         .then(function(res) {
-          vm.venues = [];
           vm.venues = res.data.venues;
           centerMap();
           createVenueMarkers();
