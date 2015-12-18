@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 @import url(https://fonts.googleapis.com/css?family=Mako);
+@import url(https://fonts.googleapis.com/css?family=Asap);
 
 body {
 }
@@ -58,7 +59,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 
 .index-welcome-image {
-  background: url('http://i.imgur.com/QBtR7N3.jpg');
+  background: url('http://i.imgur.com/oxxfVyS.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -101,8 +102,27 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
   padding-bottom: 750px;
 }
 
-.sign-in-password {
-  margin-top: 300px;
+.sign-in-form {
+  margin-top: 270px;
+}
+
+.email-password-font {
+  color: rgba(255, 255, 255, .815);
+  font-family: 'Mako', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+.btn-warning {
+  border: 1px solid lightgrey;
+}
+
+.local-city-title {
+  margin-top: 40px;
+  margin-left: 50px;
+  color: rgba(255, 255, 255, .815);
+  font-family: 'Righteous', cursive;
+  font-size: 80px;
 }
 
 
