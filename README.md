@@ -4,7 +4,7 @@
 
 ---
 
-### The Product
+### The Product:
 
 An app that helps you make recommendations to your friends who are visiting from out of town. 
 
@@ -12,7 +12,7 @@ An app that helps you make recommendations to your friends who are visiting from
 
 ---
 
-### The Purpose
+### The Purpose:
 
 When your family or loved ones come to visit your town and they need recommendations on a place to visit, then can look up your recommendations on this app. 
 
@@ -45,7 +45,6 @@ Communication | Collaboration | Design | Development | APIs | Deployment
 
 ### Installations Required:
 
-#### Package dependencies:
 - Below is a snippet of the package.json so you can npm install all package dependencies.
 
 ```
