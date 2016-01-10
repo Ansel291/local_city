@@ -6,18 +6,22 @@
 
 ### The Product:
 
-Local City is an app that helps you make recommendations to your friends who are visiting from out of town.   
+Local City is an app that helps you make recommendations to your friends of locations or points of interest to visit when they are visiting from out of town. 
+
+PLEASE NOTE that this project is very much in it's ALPHA stage of creation with many features and a lot of work still remaining to be completed.  
+
+Currently, the App only allows a user to sign in and perform searches in any city with Google Maps and displays locations with location markers. However, the project is still currently being built with the goal that a user can Add venues from a search so that their locations will be saved onto a user page and with a map that displays that user's added locations.
 
 ####[Click here for LOCAL CITY](https://secure-ravine-3320.herokuapp.com/)
+
+---
+
+### The Purpose:
 
 
 When your family or loved ones come to visit your town/city and they need recommendations on a place to visit, they will be able to look up the  recommendations that you made on Local City. 
 
 This app however makes recommendations that are unique to locals only, and strives not to promote overly "touristy" locations.  The purpose of this app is to make the visitor feel more like a "local".
-
-Please note that this project is very much in it's alpha stage of creation with a lot of work still remaining to be completed.
-
-Currently, the App allows a user to sign in and perform searches in any city with Google Maps and displays locations with location markers. However, the project is still currently being built with the goal that a user can Add venues from a search so that their locations will be saved onto a user page and with a map that displays that user's added locations.
 
 ---
 
