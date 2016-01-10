@@ -88,9 +88,7 @@ Communication | Collaboration | Design | Development | APIs | Deployment
 
 ### Design
 
-
-
-
+![](http://i.imgur.com/fi5KPUx.jpg) 
 
 ---
 
