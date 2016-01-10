@@ -6,17 +6,19 @@
 
 ### The Product:
 
-An app that helps you make recommendations to your friends who are visiting from out of town. 
+Local City is an app that helps you make recommendations to your friends who are visiting from out of town.   
 
 ####[Click here for LOCAL CITY](https://secure-ravine-3320.herokuapp.com/)
 
----
+<br>
 
-### The Purpose:
+When your family or loved ones come to visit your town/city and they need recommendations on a place to visit, they will be able to look up the  recommendations that you made on Local City. 
 
-When your family or loved ones come to visit your town and they need recommendations on a place to visit, then can look up your recommendations on this app. 
+This app however makes recommendations that are unique to locals only, and strives not to promote overly "touristy" locations.  The purpose of this app is to make the visitor feel more like a "local".
 
-This app however makes recommendations that are unique to locals only, and strives not to promote overly "touristy" locations.  The purpose of the app is to make the traveller feel like a local.
+Please note that this project is very much in it's alpha stage of creation with a lot of work still remaining to be completed.
+
+Currently, the App allows a user to sign in and perform searches in any city with Google Maps and displays locations with location markers. However, the project is still currently being built with the goal that a user can Add venues from a search so that their locations will be saved onto a user page and with a map that displays that user's added locations.
 
 ---
 
@@ -139,9 +141,7 @@ Although app is successful in showcasing the aesthetic and sense of design that 
 
 My biggest hurdle remains for me to continue to learn the nuances of the angular.js language and applying it so that I can continue to build more features for Local City.
 
-Currently, the App allows a user to sign in and perform searches in any city with Google Maps and displays locations with location markers. However, the project is still currently being built with the goal that a user can Add venues from a search so that their locations will be saved onto a user page and with a map that displays that user's added locations.
-
- This is a project that I will continue to work on while I am outside of General Assembly for my own personal growth as a developer.
+This is a project that I will continue to work on while I am outside of General Assembly for my own personal growth as a developer.
 
 ####Copyrighted by:
 Jason Asahara 2015
