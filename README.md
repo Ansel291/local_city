@@ -31,6 +31,12 @@ This app however makes recommendations that are unique to locals only, and striv
 ---------| ---------- | ---------
 Jason **Asahara** | [GitHub](https://github.com/Ansel291) | [jasahara@yahoo.com](jasahara@yahoo.com)
 
+### Design:
+
+![](http://i.imgur.com/fi5KPUx.jpg) 
+
+---
+
 ### Technologies Used:
 
 
@@ -83,12 +89,6 @@ Communication | Collaboration | Design | Development | APIs | Deployment
 ![](http://i.imgur.com/RQVApb1.png) 
 ![](http://i.imgur.com/EFK0Bna.png)
 ![](http://i.imgur.com/FY7Ha1U.png)
-
----
-
-### Design
-
-![](http://i.imgur.com/fi5KPUx.jpg) 
 
 ---
 
