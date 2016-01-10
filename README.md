@@ -10,7 +10,6 @@ Local City is an app that helps you make recommendations to your friends who are
 
 ####[Click here for LOCAL CITY](https://secure-ravine-3320.herokuapp.com/)
 
-<br>
 
 When your family or loved ones come to visit your town/city and they need recommendations on a place to visit, they will be able to look up the  recommendations that you made on Local City. 
 
