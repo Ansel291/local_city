@@ -81,7 +81,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 
 #buttonAddVenue {
   border-radius: 5px;
-  margin-top: 15px;
+  margin-top: 20px;
   color: red;
 }
 
