@@ -47,14 +47,15 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 
 .index-list {
-  margin-top: 55px;
+  margin-top: 5px;
   margin-left: 35px;
-  margin-bottom: -25px;
+/*  margin-bottom: -25px;*/
   color: rgba(0, 0, 0, 0.65);
 }
 
 .index-list-connected {
-  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   border-bottom: 1px solid lightgrey;
 }
 
