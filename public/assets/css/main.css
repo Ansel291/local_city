@@ -149,4 +149,13 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
   font-family: 'Mako', sans-serif;
 }
 
+.search-index-links {
+  color: #ba332e;
+  margin-top: 0px;
+}
+
+.search-index-links:hover {
+  color: #ba332e;
+}
+
 
