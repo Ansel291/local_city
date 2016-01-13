@@ -47,7 +47,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 
 .index-list {
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: 35px;
 /*  margin-bottom: -25px;*/
   color: rgba(0, 0, 0, 0.65);
